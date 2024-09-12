@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">MyServer</div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Planos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="form_contato">
+      <h2 class="font_title">Contato</h2>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <label>Nome</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Digite seu nome"
+          autocomplete="off"
+          required
+        />
+        <label>Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Digite seu email"
+          autocomplete="off"
+          required
+        />
+        <label>Mensagem</label>
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Digite sua Mensagem"
+          required
+        ></textarea>
+        <button type="submit">Enviar</button>
+
+        <input
+          type="hidden"
+          name="accessKey"
+          value="5e469ce5-f1bb-4ccb-baa6-9514d77e8222"
+        />
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="http://127.0.0.1:5500/obrigado.html"
+        />
+      </form>
+    </section>
+  </body>
+</html>
